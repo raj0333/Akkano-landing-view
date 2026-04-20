@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { CheckCircle } from 'lucide-react';
+import videoImage from '../../imports/video.svg';
 
 export function AboutSection() {
   const benefits = [
@@ -8,7 +9,7 @@ export function AboutSection() {
       text: ' No more guessing or "he-said-she-said."',
     },
     {
-      bold: "Actionable Tools:", 
+      bold: "Actionable Tools:",
       text: " Strategies you can use.",
     },
     {
@@ -28,7 +29,7 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <img src="/src/imports/video.svg" alt="Happy couple planning together" className="w-full drop-shadow-xl rounded-2xl" />
+            <img src={videoImage} alt="Happy couple planning together" className="w-full drop-shadow-xl rounded-2xl" />
           </motion.div>
 
           {/* Content */}
@@ -63,7 +64,7 @@ export function AboutSection() {
                 </motion.div>
               ))}
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-[#0f4c3a] text-white px-8 py-3.5 rounded-xl hover:bg-[#0a3629] transition-colors font-bold shadow-sm">
                 Get Started

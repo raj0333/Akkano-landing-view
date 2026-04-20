@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import coupleImage from '../../imports/couple.svg';
+import iconImage from '../../imports/icon.svg';
 
 export function GetStartedSection() {
   const leftItems = [
@@ -70,7 +71,7 @@ export function GetStartedSection() {
                 viewport={{ once: true }}
                 className="flex items-start gap-4"
               >
-                <img src="/src/imports/icon.svg" alt="Check" className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0 mt-0.5" />
+                <img src={iconImage} alt="Check" className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-white text-base md:text-[17px] font-bold leading-snug mb-2">
                     {item.title}
@@ -109,7 +110,7 @@ export function GetStartedSection() {
                 viewport={{ once: true }}
                 className="flex items-start gap-4"
               >
-                <img src="/src/imports/icon.svg" alt="Check" className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0 mt-0.5" />
+                <img src={iconImage} alt="Check" className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-white text-base md:text-[17px] font-bold leading-snug mb-2">
                     {item.title}

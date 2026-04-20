@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { LayoutGrid, Route, Target, GraduationCap, Map, MessagesSquare, Eye } from 'lucide-react';
+import frameImage from '../../imports/frame.svg';
 
 export function WhatYouGet() {
   const benefits = [
@@ -59,7 +60,7 @@ export function WhatYouGet() {
 
         <div className="grid lg:grid-cols-[auto_1fr] gap-12 lg:gap-16 items-center">
           <div className="w-full max-w-[400px] xl:max-w-[480px] mx-auto lg:mx-0">
-            <img src="/src/imports/frame.svg" alt="Sample Report Book" className="w-full" />
+            <img src={frameImage} alt="Sample Report Book" className="w-full" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

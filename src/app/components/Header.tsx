@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import logo from '../../imports/logo.svg';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/src/imports/logo.svg" alt="AKKANO Logo" className="h-8 w-auto" />
+            <img src={logo} alt="logo" />
           </div>
 
           {/* CTA Button */}

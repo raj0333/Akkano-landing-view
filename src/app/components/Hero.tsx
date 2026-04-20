@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import topRightImage from '../../imports/top-right.svg';
 
 export function Hero() {
   return (
@@ -37,7 +38,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <img src="/src/imports/top-right.svg" alt="Happy couple planning together" className="w-full drop-shadow-xl" />
+            <img src={topRightImage} alt="Happy couple planning together" className="w-full drop-shadow-xl" />
           </motion.div>
         </div>
       </div>
