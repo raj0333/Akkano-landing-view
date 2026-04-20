@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import coupleImage from '../../imports/couple.svg';
-import iconImage from '../../imports/icon.svg';
+import iconImage from '../../imports/Icon.svg';
 
 export function GetStartedSection() {
   const leftItems = [
